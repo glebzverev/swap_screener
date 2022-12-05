@@ -1,15 +1,13 @@
 require("dotenv").config();
-// const types = require('pg').types;
 const ethers = require("ethers")
-
 
 const Pool = require('pg').Pool;
 const pool = new Pool({
-  user: 'postgres',
-  host: 'localhost',
-  database: 'ozma',
-  password: 'password',
-  port: 5432,
+  user: process.env.user,
+  host: process.env.host,
+  database: process.env.database,
+  password: process.env.password,
+  port: process.env.port,
 });
  
 async function dropTable(){
@@ -64,15 +62,8 @@ async function watchThousand(){
     return res.rows
 }
 
-async function main(){
-    // await watchThousand().then(console.log);
-}
-
 exports.addSwap = addSwap;
 exports.watchThousand = watchThousand;
 
-// main().catch((error) => {
-//     console.error(error);
-//     process.exitCode = 1;
-//   });
+
 
