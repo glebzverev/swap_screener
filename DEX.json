@@ -1,0 +1,14 @@
+{
+    "DEX":{
+        "Uniswap": "0x5C69bEe701ef814a2B6a3EDD4B1652CB9cc5aA6f",
+        "SushiSwap": "0xC0AEe478e3658e2610c5F7A4A2E1777cE9e4f2Ac"    
+    },
+    "Token":{
+        "USDT": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+        "WETH": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
+    },
+    "Pools":{
+        "Uniswap": "0x0d4a11d5EEaaC28EC3F61d100daF4d40471f1852",
+        "Sushiswap": "0x06da0fd433C1A5d7a4faa01111c044910A184553"
+    }
+}
