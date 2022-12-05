@@ -26,6 +26,6 @@ npx hardhat run scripts/uniListener.js
 npx hardhat run scripts/sushiListener.js
 npx hardhat run server.js
 ```
-5. Deploy contracts
+5. Watch results
 
 http://localhost:3000/swaps
