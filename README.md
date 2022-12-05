@@ -1,13 +1,31 @@
-# Sample Hardhat Project
+# Swap-Screner
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
+## Schema  
+![alt text](https://github.com/glebzverev/swap-screener/blob/main/docs/example.jpg?raw=true)
 
-Try running some of the following tasks:
-
+## Quick start
+1. Download packages
 ```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deploy.js
+npm i -d
 ```
+2. Create .env file
+```text
+PRIVATE_KEY = <"YOUR METAMASK PRIVATE KEY">
+URL = <"ETHEREUM RPC YRL">
+API_KEY_ETHERSCAN = = <"API KEY ETHERSCAN">
+ALCHEMY_SOCKET = <"ALCHEMY_SOCKET_KEY">
+DB data ...
+```
+3. Compile contracts
+```shell
+npx hardhat compile
+```
+4. Running node
+```shell
+npx hardhat run scripts/uniListener.js
+npx hardhat run scripts/sushiListener.js
+npx hardhat run server.js
+```
+5. Deploy contracts
+
+http://localhost:3000/swaps
