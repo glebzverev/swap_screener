@@ -1,7 +1,7 @@
 # Swap-Screner
 
 ## Schema  
-![alt text](https://github.com/glebzverev/swap-screener/blob/main/docs/example.jpg?raw=true)
+![alt text](https://github.com/glebzverev/swap_screener/blob/main/docs/example.png)
 
 ## Quick start
 1. Download packages
