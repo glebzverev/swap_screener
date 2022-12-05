@@ -2,16 +2,10 @@ require("@nomicfoundation/hardhat-toolbox");
 require("@nomiclabs/hardhat-etherscan");
 require("@nomiclabs/hardhat-ethers");
 
-require("./tasks/getBlock")
-require("./scripts/db")
-// require("./tasks/newEventListener")
-
 require("dotenv").config();
 const privateKey = process.env.PRIVATE_KEY
 const endpoint = process.env.URL
-// const apiKeyPolygon = process.env.API_KEY_MUMBAI
 const apiKeyEtherscan = process.env.API_KEY_ETHERSCAN
-// const watchPools = watcher.watchPools();
 
 /** @type import('hardhat/config').HardhatUserConfig */
 module.exports = {

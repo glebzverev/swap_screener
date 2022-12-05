@@ -9,13 +9,10 @@ app.use(
     extended: true,
   })
 );
-// создаем парсер для данных application/x-www-form-urlencoded
-const urlencodedParser = express.urlencoded({extended: false});
   
 app.get("/", function (request, response) {
     response.sendFile(__dirname + "/index.html");
 });
-
 
 function checkBoth(val){
     var uni = false 
@@ -33,18 +30,14 @@ function checkBoth(val){
 
 app.get("/swaps", async (request, response) => {
     let res = await watchThousand()
-    
     var timestamp = {}
-    // console.log(res)
     res.forEach((val)=>{
         if (! (val['timestamp'] in timestamp)){
             timestamp[val['timestamp']] = {"buy":[], "sell":[]}
         }
             if (val['side'] == 'buy'){
-                // console.log(timestamp[val['timestamp']])
                 timestamp[val['timestamp']]['buy'].push([val['dex_name'], val])
             }else{
-                // console.log(timestamp[val['timestamp']])
                 timestamp[val['timestamp']]['sell'].push([val['dex_name'], val])
             }
         })
