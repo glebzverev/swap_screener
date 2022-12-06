@@ -62,5 +62,5 @@ app.get("/swaps", async (request, response) => {
 
 });
    
-app.listen(3000, ()=>console.log("Сервер запущен..."));
+app.listen(80, ()=>console.log("Сервер запущен..."));
 
